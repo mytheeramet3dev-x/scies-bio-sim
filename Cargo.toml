@@ -6,7 +6,7 @@ description = "Deterministic time-step biological process simulator for Rust."
 license = "MIT"
 
 [dependencies]
-scies-bio-th = { path = "../github/scies-bio-th", version = "0.1", features = ["serde"] }
+scies-bio-th = { path = "../scies-bio-th", version = "0.1", features = ["serde"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 thiserror = "2"
@@ -16,6 +16,6 @@ default = []
 db = ["dep:scies-bio-db"]
 
 [dependencies.scies-bio-db]
-path = "../github/scies-bio-db"
+path = "../scies-bio-db"
 version = "0.2"
 optional = true
