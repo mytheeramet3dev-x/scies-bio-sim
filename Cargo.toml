@@ -1,12 +1,12 @@
 [package]
 name = "scies-bio-sim"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 description = "Deterministic time-step biological process simulator for Rust."
 license = "MIT"
 
 [dependencies]
-scies-bio-th = { path = "../scies-bio-th", version = "0.1", features = ["serde"] }
+scies-bio-th = { path = "../scies-bio-th", version = "1.0", features = ["serde"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 thiserror = "2"
@@ -17,5 +17,5 @@ db = ["dep:scies-bio-db"]
 
 [dependencies.scies-bio-db]
 path = "../scies-bio-db"
-version = "0.2"
+version = "1.0"
 optional = true
